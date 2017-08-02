@@ -34,6 +34,12 @@ Yes it is [supported][yue-js]. However it should be noted that currently it is n
 
 No it is not possible, Yue requires to be used in the UI thread of the main process, which is not supported by NW.js.
 
+### When will Yue be stable when running in Node.js?
+
+Probably never. Node.js has its own libuv event loop that can not run together with the GUI event loop required by Yue, currently the Node.js binding of Yue replaces the event loop of Node.js, but it has so many problems that are probably never going to be fixed.
+
+My plan is to provide a custom distribution of Node.js that uses GUI event loop instead, like how Electron is implemented, so users can run Yue in it without hacks.
+
 [paid-plan]: https://github.com/yue/yue/tree/master/docs/paid_plans
 [cef]: https://bitbucket.org/chromiumembedded/cef
 [yue-js]: http://libyue.com/docs/v0.1.0/js/guides/getting_started.html
