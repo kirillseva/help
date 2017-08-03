@@ -14,6 +14,12 @@ But once you have done modifications to Yue's source code, all your code linked 
 
 [Yue Roadmap](https://github.com/yue/yue/blob/master/docs/development/roadmap.md).
 
+### Will Yue support XAML/QML?
+
+No, Yue will always be a widgets library, there is no plan to implement high level languages like XAML/QML in Yue. The goal of Yue is to provide a low level library that can be used to easily implement things like Rect Native and XAML/QML.
+
+However Yue will support creating widgets from simple XML descriptions, since it is essential for writing a visual GUI builder.
+
 ### What's the minimum version of Windows supported?
 
 By using Win32 API and GDI+, Yue can work on Windows >= 7. It is also possible to make Yue work on Windows XP with some efforts, but this is not on my roadmap.
