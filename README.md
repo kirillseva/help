@@ -16,13 +16,23 @@ But once you have done modifications to Yue's source code, all your code linked 
 
 ### Will Yue support XAML/QML?
 
-No, Yue will always be a widgets library, there is no plan to implement high level languages like XAML/QML in Yue. The goal of Yue is to provide a low level library that can be used to easily implement things like Rect Native and XAML/QML.
+No, Yue will always be a widgets library, there is no plan to implement high level languages like XAML/QML in Yue. The goal of Yue is to provide a low-level library that can be used to easily implement things like Rect Native and XAML/QML.
 
 However Yue will support creating widgets from simple XML descriptions, since it is essential for writing a visual GUI builder.
+
+### Will Yue support CSS?
+
+No.
 
 ### What's the minimum version of Windows supported?
 
 By using Win32 API and GDI+, Yue can work on Windows >= 7. It is also possible to make Yue work on Windows XP with some efforts, but this is not on my roadmap.
+
+### Are all widgets windowless on Windows?
+
+No, currently text input related widgets are still implemented by using Win32 Common Controls, becuase it is rather tough to implement a text input widget from scratch, and I have to focus on more important things first.
+
+In future I'll make all widgets windowless, but it might be optional since it may bloat the size of executable.
 
 ### Can I embed a web browser in Yue?
 
