@@ -4,6 +4,10 @@ You can ask any question about Yue in the Issues page here, but please do not ex
 
 ## FAQ
 
+### What does Yue mean?
+
+It means moon in Chinese.
+
 ### Do I need to open source my project when using Yue?
 
 As long as you do not modify Yue's source code, there is no requirements on which license you should use for your project. You can link your project with Yue statically or dynamcially, or even compile Yue's source code as part of your project.
