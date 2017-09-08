@@ -8,11 +8,55 @@ You can ask any question about Yue in the Issues page here, but please do not ex
 
 It means moon in Chinese.
 
+### Why a new GUI library? / What's the differences between Yue and XXX?
+
+When writing GUI programs, I had been searching for a library that:
+
+* Uses native widgets;
+* Works on all major desktop platforms;
+* Has a modern and clean C++ interface;
+* Has good support for High DPI;
+* Uses windowless controls on Windows;
+* Generates small executable size;
+* Friendly license for closed source apps.
+
+There were lots of good GUI toolkits, but I could not find one that meets all above conditions, so I decided to write my own.
+
 ### Do I need to open source my project when using Yue?
 
 As long as you do not modify Yue's source code, there is no requirements on which license you should use for your project. You can link your project with Yue statically or dynamcially, or even compile Yue's source code as part of your project.
 
 But once you have done modifications to Yue's source code, all your code linked with Yue have to be open sourced with MS-RL. The only way to remove this limitation is to subscribe to [Yue's paid plan][paid-plan].
+
+### The license seems like a non starter.
+
+Note that the license of Yue has less restrictions than LGPL, it does not require you to open source your project when you statically link with Yue, or compile Yue's source code as part of your project.
+
+So if you are fine with LGPL libraries, there is no reason to worry about Yue's license.
+
+Yue is just another open source project with dual licenses, and it has __less__ restrictions than most dual licenses projects.
+
+### The license indicates that I have to rely on you to make changes I need, otherwise I have to pay or open source my project?
+
+Yes, and it is true for most dual licences projects.
+
+But note that with Yue you only have to pay __once__ if you just want to fork Yue without changing your project's license, you only need to pay monthly if you want to keep getting updates.
+
+### Can I trust you on this project?
+
+I had been the solo developer of [Electron](https://electron.atom.io) and [node-webkit](https://github.com/nwjs/nw.js) (now known as NW.js) for a very long time, and today big corps are building their new apps on them. So I think it should not be hard to be confident about Yue.
+
+(If you are wondering, it is still my full-time job working on Electron.)
+
+### Having issues reported can make your software better, charging for it is not wise.
+
+I know, and probably I know it better than you, I have been a long time open source project maintainer.
+
+And you can report your issue to [yue/help](https://github.com/yue/help), I'll read them, it is just I will only reply to some of them.
+
+### Your website looks shabby.
+
+But it has a good documentation site.
 
 ### Is there a roadmap?
 
