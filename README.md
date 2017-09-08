@@ -40,7 +40,7 @@ Yue is just another open source project with dual licenses, and it has __less__ 
 
 Yes, and it is true for most dual licences projects.
 
-But note that with Yue you only have to pay __once__ if you just want to fork Yue without changing your project's license, you only need to pay monthly if you want to keep getting updates.
+But note that with Yue you only have to pay __once__ if you just want to fork Yue without changing your project's license, you only need to pay monthly if you want to get updates.
 
 ### Can I trust you on this project?
 
@@ -86,24 +86,8 @@ In future I'll make all widgets windowless, but it might be optional since it ma
 
 Currently there are efforts on supporting native webview in Yue, e.g. `WebView` on macOS, `webkitgtk` on Linux, and Internet Explorer on Windows.
 
-### Can I embed Chrome in Yue?
-
-It should be possible to embed [CEF][cef] into Yue, but it would take lots of efforts and currently not on my roadmap.
-
-### Can I use Yue in Electron?
-
-Yes it is [supported][yue-js]. However it should be noted that currently it is not possible to embed `WebContents` of Electron into windows created by Yue, it could be supported but would need great efforts on both Electron and Yue's sides, and it is not on my roadmap.
-
 ### Can I use Yue in NW.js?
 
 No it is not possible, Yue requires to be used in the UI thread of the main process, which is not supported by NW.js.
 
-### When will Yue be stable when running in Node.js?
-
-Probably never. Node.js has its own libuv event loop that can not run together with the GUI event loop required by Yue, currently the Node.js binding of Yue replaces the event loop of Node.js, but it has so many problems that are probably never going to be fixed.
-
-My plan is to provide a custom distribution of Node.js that uses GUI event loop instead, like how Electron is implemented, so users can run Yue in it without hacks.
-
 [paid-plan]: https://github.com/yue/yue/tree/master/docs/paid_plans
-[cef]: https://bitbucket.org/chromiumembedded/cef
-[yue-js]: http://libyue.com/docs/v0.1.0/js/guides/getting_started.html
