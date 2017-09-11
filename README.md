@@ -78,7 +78,7 @@ By using Win32 API and GDI+, Yue can work on Windows >= 7. It is also possible t
 
 ### Are all widgets windowless on Windows?
 
-No, currently text input related widgets are still implemented by using Win32 Common Controls, becuase it is rather tough to implement a text input widget from scratch, and I have to focus on more important things first.
+No, currently text input related widgets are still implemented by using Win32 Common Controls, because it is rather tough to implement a text input widget from scratch, and I have to focus on more important things first.
 
 In future I'll make all widgets windowless, but it might be optional since it may bloat the size of executable.
 
